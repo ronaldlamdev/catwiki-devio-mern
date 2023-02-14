@@ -15,3 +15,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.search-icon-bg {
+  background-image: url('./assets/images/icons8-search.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
