@@ -3,7 +3,7 @@ import Logo from '../images/CatwikiLogo.svg';
 
 const Search = () => {
   return (
-    <div className='w-[340px] mx-[1.125rem] mt-[3.063rem] rounded-[2.625rem] search-bg h-[400px]'>
+    <div className='min-w-[340px] max-w-[1248px] mx-[1.125rem] mt-[3.063rem] rounded-t-[2.625rem] search-bg h-[400px]'>
       <div className='pl-[1.453rem]'>
         <img src={Logo} className='invert contrast-150  pt-[1.313rem]' alt='logo'/>
         <h2 className='text-white w-[135px] mt-3'>Get to know more about your cat breed</h2>

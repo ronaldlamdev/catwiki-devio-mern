@@ -11,8 +11,8 @@ body {
 
 .search-bg {
   background-image: url('./assets/images/HeroImagesm.png');
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -20,4 +20,17 @@ body {
   background-image: url('./assets/images/icons8-search.svg');
   background-repeat: no-repeat;
   background-position: right;
+}
+
+/* Media queries */
+@media (width >= 768px) {
+  .search-bg {
+    background-image: url('./assets/images/HeroImagemd.png');
+  }
+}
+
+@media (768px < width < 1024px) {
+  .search-bg {
+    background-image: url('./assets/images/HeroImagelg.png');
+  }
 }
