@@ -2,13 +2,15 @@ require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
+const getRouter = require('./routes/getRoute');
 
 app.use(morgan('dev'))
+app.use(express.json())
+app.use((req, res, next) => {
+  console.log('Hello from the middleware');
+  next();
+} )
 
-app.get('/', (req, res) => {
-  res.status(200).json({
-    status: 'success',
-  })
-})
+app.use(`/api.thecatapi.com/v1/breeds`, getRouter)
 
-app.listen(process.env.PORT, () => console.log('Listening on port', process.env.PORT))
+module.exports = app;
