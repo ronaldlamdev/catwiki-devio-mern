@@ -1,9 +1,9 @@
 const express = require('express');
-const getController = require('../controllers/getController')
+const getBreeds = require('../controllers/breedsController')
 const router = express.Router();
 
 router
   .route('/')
-  .get(getController.getCat)
+  .get(getBreeds.getBreeds)
 
 module.exports = router;
