@@ -1,17 +1,23 @@
 import SearchIcon from '../images/icons8-search.svg';
 import Logo from '../images/CatwikiLogo.svg';
+import HeroCatSm from '../images/HeroImagesm.png';
+import HeroCatMd from '../images/HeroImagemd.png';
+import HeroCatLg from '../images/HeroImagelg.png';
 
 const Search = () => {
   return (
-    <div className='min-w-[340px] max-w-[1248px] mx-[1.125rem] mt-[3.063rem] rounded-t-[2.625rem] search-bg h-[400px]'>
-      <div className='pl-[1.453rem]'>
-        <img src={Logo} className='invert contrast-150  pt-[1.313rem]' alt='logo'/>
-        <h2 className='text-white w-[135px] mt-3'>Get to know more about your cat breed</h2>
-        {/* Search function */}
-        <div className='h-9 w-fit flex mt-4'>
-          <input type='text' placeholder='Search' className='rounded-l-[3.688rem] pl-3 bg-white h-full'/>
-          <div className='h-full bg-white flex items-center rounded-r-[3.688rem]'>
-            <img src={SearchIcon} alt='Search icon' className='mr-1'/>
+    <div className='px-[1.125rem] mt-8'>
+      <div className='w-full relative'>
+        <picture>
+          <source srcSet={HeroCatLg} media='(width > 1024px)'/>
+          <source srcSet={HeroCatMd} media='(768px <= width < 1023px)'/>
+          <img src={HeroCatSm} className='w-full rounded-t-3xl' alt='Cat'/>
+        </picture>
+        <div className='absolute top-0'>
+          <img src={Logo} className='invert contrast-[150%]' alt='logo'/>
+          <h1 className='text-white'>Get to know more about your breed</h1>
+          <div>
+            
           </div>
         </div>
       </div>

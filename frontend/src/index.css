@@ -7,30 +7,5 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-}
-
-.search-bg {
-  background-image: url('./assets/images/HeroImagesm.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.search-icon-bg {
-  background-image: url('./assets/images/icons8-search.svg');
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-/* Media queries */
-@media (width >= 768px) {
-  .search-bg {
-    background-image: url('./assets/images/HeroImagemd.png');
-  }
-}
-
-@media (768px < width < 1024px) {
-  .search-bg {
-    background-image: url('./assets/images/HeroImagelg.png');
-  }
+  background-color: white;
 }
