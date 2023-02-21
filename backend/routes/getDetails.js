@@ -11,6 +11,6 @@ router.param('breed', (req, res, next, val) => {
 
 router
   .route('/:breed')
-  .get(getDetails.getDetails)
+  .get(getDetails.checkBreed, getDetails.getDetails)
 
 module.exports = router;

@@ -2,9 +2,18 @@ const fs = require('fs');
 
 const breeds = JSON.parse(fs.readFileSync(`${__dirname}/../data/breeds-list.json`))
 
-exports.getDetails = (req, res) => {
+exports.checkBreed = (req, res, next) => {
+  console.log(req.params)
+  if (!breeds.find(c => c.id === req.params.breed)) {
+    return (res.status(400).json({
+      status: 'failed',
+      message: `Could not find ${req.params.breed}`
+    }))
+  };
+  next();
+}
 
-  console.log(req.params.breed)
+exports.getDetails = (req, res) => {
 
   const id = req.params.breed;
   const breed = breeds.find(c => c.id === id)
