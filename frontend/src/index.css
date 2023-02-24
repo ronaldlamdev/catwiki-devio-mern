@@ -9,3 +9,29 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
 }
+
+/* Text div in Search section of Search component */
+
+.search-text-div {
+  @apply flex justify-center flex-col gap-3 
+  h-full absolute top-0 left-7 max-w-[371px] 
+  w-[135px] min-[580px]:w-[220px] 
+  min-[768px]:w-[300px] min-[900px]:w-[400px]
+}
+
+.search-text-div-white-logo {
+  @apply invert contrast-[150%] 
+  min-[580px]:w-full max-w-[310px]
+}
+
+.search-text-div-input {
+  @apply pl-4 text-sm min-[580px]:text-lg 
+  rounded-l-3xl max-w-[394px] w-[90px] 
+  min-[580px]:w-[180px] min-[768px]:w-[270px] 
+  min-[900px]:w-[360px] lg:w-[394px]
+}
+
+.search-icon-div {
+  @apply bg-white flex justify-center 
+  rounded-r-3xl border-l-slate-200 border-l w-10
+}
