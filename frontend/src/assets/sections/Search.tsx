@@ -1,4 +1,5 @@
 import SearchIcon from '../images/icons8-search.svg';
+import {BsArrowRight} from 'react-icons/bs';
 import Logo from '../images/CatwikiLogo.svg';
 import HeroCatSm from '../images/HeroImagesm.png';
 import HeroCatMd from '../images/HeroImagemd.png';
@@ -18,7 +19,7 @@ const Search = () => {
         <div className='search-text-div'>
           <div>
             <img src={Logo} className='search-text-div-white-logo' alt='logo'/>
-            <h1 className='text-white text-sm min-[580px]:text-lg mt-4'>Get to know more about your breed</h1>
+            <h1 className='text-white text-sm min-[580px]:text-lg lg:text-3xl mt-4'>Get to know more about your breed</h1>
           </div>
           <div className='flex'>
             <input type='text' placeholder='Search' className='search-text-div-input'/>
@@ -30,8 +31,17 @@ const Search = () => {
       </div>
 
       {/* Discover breeds */}
-      <div>
-
+      <div className='bg-[#E3E1DC] rounded-b-3xl px-7 pt-3'>
+        <div className='flex flex-col gap-4'>
+          <div>
+            <h2 className='text-[#291507] font-medium text-sm'>Most Searched Breeds</h2>
+            <div className='bg-[#4D270C] w-10 h-1'/>
+          </div>
+          <div className='flex justify-between items-center'>
+            <h1 className='text-[#291507] font-bold text-lg'>66+ Breeds For you to discover</h1>
+            <span className='hidden min-[580px]:flex items-center text-[#29150799] font-bold text-lg gap-2'>SEE MORE <BsArrowRight /></span>
+          </div>
+        </div>
       </div>
     </div>
   )

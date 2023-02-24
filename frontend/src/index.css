@@ -14,9 +14,9 @@ body {
 
 .search-text-div {
   @apply flex justify-center flex-col gap-3 
-  h-full absolute top-0 left-7 max-w-[371px] 
+  h-full lg:items-start absolute top-0 left-7 lg:left-20 max-w-[420px] 
   w-[135px] min-[580px]:w-[220px] 
-  min-[768px]:w-[300px] min-[900px]:w-[400px]
+  min-[768px]:w-[300px] min-[900px]:w-[394px]
 }
 
 .search-text-div-white-logo {
@@ -26,12 +26,14 @@ body {
 
 .search-text-div-input {
   @apply pl-4 text-sm min-[580px]:text-lg 
-  rounded-l-3xl max-w-[394px] w-[90px] 
-  min-[580px]:w-[180px] min-[768px]:w-[270px] 
-  min-[900px]:w-[360px] lg:w-[394px]
+  rounded-l-3xl max-w-[420px] w-[90px] 
+  min-[580px]:w-[180px] md:w-[270px] 
+  min-[900px]:w-[360px] lg:w-[380px]
+  md:h-8 lg:h-10
 }
 
 .search-icon-div {
   @apply bg-white flex justify-center 
-  rounded-r-3xl border-l-slate-200 border-l w-10
+  rounded-r-3xl border-l-slate-200 
+  border-l w-10 lg:w-14
 }
