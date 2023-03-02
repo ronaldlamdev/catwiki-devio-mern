@@ -37,3 +37,16 @@ body {
   rounded-r-3xl border-l-slate-200 
   border-l w-10 lg:w-14
 }
+
+/* Discover section of search component */
+
+.grid-img-div {
+  @apply w-[135px] min-[440px]:w-[150px]
+  min-[500px]:w-[180px] h-[135px] 
+  min-[440px]:h-[150px] min-[500px]:h-[180px]
+  max-w-[220px] max-h-[220px]
+}
+
+.grid-img {
+  @apply w-full object-cover h-full rounded-xl
+}

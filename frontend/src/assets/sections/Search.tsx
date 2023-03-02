@@ -50,32 +50,32 @@ const Search = () => {
         </div>
 
         {/* Breeds images */}
-        <div className='grid grid-cols-2 gap-3'>
+        <div className='grid grid-cols-2 gap-3 lg:flex'>
           {/* First grid item */}
           <div className='flex flex-col gap-3'>
-            <div className='w-[135px] h-[135px]'>
-              <img className='w-full h-full rounded-xl' src={Placeholder1}/>
+            <div className='grid-img-div'>
+              <img className='grid-img' src={Placeholder1}/>
             </div>
             <h2 className='text-[#291507] font-semibold text-sm'>Cat 1</h2>
           </div>
           {/* Second grid item */}
           <div className='flex flex-col gap-3'>
-            <div className='w-[135px] h-[135px]'>
-              <img className='w-full h-full rounded-xl' src={Placeholder2}/>
+            <div className='grid-img-div'>
+              <img className='grid-img' src={Placeholder2}/>
             </div>
             <h2 className='text-[#291507] font-semibold text-sm'>Cat 2</h2>
           </div>
           {/* Third grid item */}
           <div className='flex flex-col gap-3'>
-            <div className='w-[135px] h-[135px]'>
-              <img className='w-full h-full rounded-xl' src={Placeholder3}/>
+            <div className='grid-img-div'>
+              <img className='grid-img' src={Placeholder3}/>
             </div>
             <h2 className='text-[#291507] font-semibold text-sm'>Cat 3</h2>
           </div>
           {/* Fourth grid item */}
           <div className='flex flex-col gap-3'>
-            <div className='w-[135px] h-[135px]'>
-              <img className='w-full h-full rounded-xl' src={Placeholder4}/>
+            <div className='grid-img-div'>
+              <img className='grid-img' src={Placeholder4}/>
             </div>
             <h2 className='text-[#291507] font-semibold text-sm'>Cat 4</h2>
           </div>
