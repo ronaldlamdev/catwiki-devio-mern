@@ -35,49 +35,49 @@ const Search = () => {
       </div>
 
       {/* Discover breeds */}
-      <div className='bg-[#E3E1DC] rounded-b-3xl px-7 pt-3 pb-14 flex flex-col gap-6'>
+      <div className='bg-[#E3E1DC] rounded-b-3xl px-7 pt-3 md:pt-12 pb-14 flex flex-col gap-6 md:gap-16'>
 
         {/* Text */}
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 lg:px-16'>
           <div>
-            <h2 className='text-[#291507] font-medium text-sm'>Most Searched Breeds</h2>
+            <h2 className='text-[#291507] font-medium text-sm md:text-lg'>Most Searched Breeds</h2>
             <div className='bg-[#4D270C] w-10 h-1'/>
           </div>
           <div className='flex justify-between items-center'>
-            <h1 className='text-[#291507] font-bold text-lg'>66+ Breeds For you to discover</h1>
-            <span className='hidden min-[580px]:flex items-center text-[#29150799] font-bold text-lg gap-2'>SEE MORE <BsArrowRight /></span>
+            <h1 className='text-[#291507] font-bold text-lg md:text-xl'>66+ Breeds For you to discover</h1>
+            <span className='hidden min-[580px]:flex items-center text-[#29150799] font-bold text-lg md:text-xl gap-2 hover:underline cursor-pointer hover:underline-offset-2'>SEE MORE <BsArrowRight /></span>
           </div>
         </div>
 
         {/* Breeds images */}
-        <div className='grid grid-cols-2 gap-3 lg:flex'>
+        <div className='grid grid-cols-2 gap-3 md:flex md:justify-evenly md:px-[6.75rem]'>
           {/* First grid item */}
           <div className='flex flex-col gap-3'>
             <div className='grid-img-div'>
               <img className='grid-img' src={Placeholder1}/>
             </div>
-            <h2 className='text-[#291507] font-semibold text-sm'>Cat 1</h2>
+            <h2 className='text-[#291507] font-semibold text-sm md:text-xl'>Cat 1</h2>
           </div>
           {/* Second grid item */}
           <div className='flex flex-col gap-3'>
             <div className='grid-img-div'>
               <img className='grid-img' src={Placeholder2}/>
             </div>
-            <h2 className='text-[#291507] font-semibold text-sm'>Cat 2</h2>
+            <h2 className='text-[#291507] font-semibold text-sm md:text-xl'>Cat 2</h2>
           </div>
           {/* Third grid item */}
           <div className='flex flex-col gap-3'>
             <div className='grid-img-div'>
               <img className='grid-img' src={Placeholder3}/>
             </div>
-            <h2 className='text-[#291507] font-semibold text-sm'>Cat 3</h2>
+            <h2 className='text-[#291507] font-semibold text-sm md:text-xl'>Cat 3</h2>
           </div>
           {/* Fourth grid item */}
           <div className='flex flex-col gap-3'>
             <div className='grid-img-div'>
               <img className='grid-img' src={Placeholder4}/>
             </div>
-            <h2 className='text-[#291507] font-semibold text-sm'>Cat 4</h2>
+            <h2 className='text-[#291507] font-semibold text-sm md:text-xl'>Cat 4</h2>
           </div>
         </div>
       </div>

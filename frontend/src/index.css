@@ -16,7 +16,7 @@ body {
   @apply flex justify-center flex-col gap-3 
   h-full lg:items-start absolute top-0 left-7 lg:left-20 max-w-[420px] 
   w-[135px] min-[580px]:w-[220px] 
-  min-[768px]:w-[300px] min-[900px]:w-[394px]
+  min-[768px]:w-[300px] min-[900px]:w-[420px]
 }
 
 .search-text-div-white-logo {
@@ -40,11 +40,16 @@ body {
 
 /* Discover section of search component */
 
-.grid-img-div {
+/* .grid-img-div {
   @apply w-[135px] min-[440px]:w-[150px]
   min-[500px]:w-[180px] h-[135px] 
   min-[440px]:h-[150px] min-[500px]:h-[180px]
   max-w-[220px] max-h-[220px]
+} */
+
+.grid-img-div {
+  @apply flex justify-center items-center
+  max-w-[280px] max-h-[280px] w-full h-full
 }
 
 .grid-img {
